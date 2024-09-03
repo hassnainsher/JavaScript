@@ -16,3 +16,11 @@ git push -u origin main
 git remote add origin https://github.com/hassnainsher/JavaScript.git
 git branch -M main
 git push -u origin main
+
+
+
+
+git status
+git add .
+git commit -m "Fixed the bug in the form validation"
+git push
