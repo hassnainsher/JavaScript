@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" id="myForm"><input type="text"> <button>submit</button></form>
+</body>
+<script>
+     let form = document.getElementById("myForm").reset();
+    let submitBtn = document.querySelector('button')
+    let inputName = document.querySelector('input')
+    
+    
+    class Railwayform{
+        submit(){
+            alert(this.name + ' your form success fully submited')
+            console.log(this.name);
+            
+        }
+        cancel(){
+            alert(this.name +'your form success fully cancled')
+        }
+        fill(givenname){
+            this.name = givenname;
+        }
+    }
+    let ali = new Railwayform();
+    submitBtn.addEventListener('click', ()=>{
+        ali.fill(inputName.value)
+        
+        setTimeout(()=>{
+        ali.submit()
+        form.reset();
+    },1000)
+    
+    })
+
+    inputName.reset()
+
+-->
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit Example</title>
+</head>
+<body>
+    <form id="nameForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('nameForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            const nameInput = document.getElementById('name').value;
+
+            console.log('Submitted Name:', nameInput); // Log the name to the console
+
+            form.reset(); // Reset the form
+        });
+    </script>
+</body>
+</html>

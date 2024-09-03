@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loadScript (src , callback){
+            var script =document.createElement('script');
+            script.src = src;
+            // script.onload = function(){
+            //     console.log('loded script with SRC'+src);
+            //     callback(src);
+            // }
+            script.onerror= function (){
+                console.log('it\'s a error '+src);
+                
+            }
+            document.body.appendChild(script)
+        }
+        function hello (src){
+            alert('hello world!'+ src)
+        }
+        // loadScript('https://cdny.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js', hello)
+        loadScript('test.js',hello)
+    </script>
+</body>
+</html>

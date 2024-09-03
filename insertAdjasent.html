@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            background: darkblue;
+        }
+        .cyan{
+            background: darkcyan;
+        }
+        
+    </style>
+</head>
+<body class="hay">
+    <button onclick="fun()"> touch me please</button>
+</body>
+<script>
+    let a = document.querySelector('body');
+    function fun (){
+        // a.classList.remove('hello');
+        a.classList.toggle('cyan')
+    }
+
+    a.classList.add('hello')
+    console.log(a.classList);
+    a.classList.remove('hay')
+
+
+    
+</script>
+</html>

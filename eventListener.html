@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListner</title>
+    <style>
+        .container{
+            height: 360px;
+            width: 360px;
+            background: darkred;
+        }
+        .container2{
+            height: 360px;
+            width: 360px;
+            background: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <button id="goo">google</button>
+    <div class="container"></div>
+
+</body>
+<script>
+
+setInterval(() => {
+    
+    document.querySelector('.container').classList.toggle('container2')
+}, 1000);
+
+
+
+
+
+document.getElementById('goo').addEventListener('click',()=>{
+    window.location = 'http://dridreeskhan.com'
+    // win.focus();
+})
+
+
+
+
+
+/*
+    let a = ()=>{alert('hello')}
+    let b = ()=>{alert('yello')}
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click',a)
+    btn.addEventListener('click',b)
+    let p = prompt('enter a number')
+    if(p==2){
+        btn.removeEventListener('click',a)
+    }
+        */
+
+</script>
+</html>

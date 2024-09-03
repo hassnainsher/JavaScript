@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="ii" >
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <h1>hello world</h1>
+</body>
+<script>
+  document.getElementsByTagName('ul')[0].firstElementChild.style.color='red';
+    document.getElementsByTagName('ul')[0].lastElementChild.style.color='red';
+    Array.from(document.getElementsByTagName('nav')).forEach((element)=>{
+        element.style.background='green'
+    })
+
+    let a = document.createElement('p');
+    a.setAttribute('class','hello')
+    a.innerText='hello'
+    document.body.appendChild(a)
+    console.log(a);
+
+    // 
+let b = document.querySelector('nav');
+b.setAttribute('id','hay')
+console.log(b);
+
+// let c = b.getAttribute('class')
+// console.log(c);
+
+
+    let h1 = document.querySelector('h1');
+   let hello= document.createElement('h4')
+h1.replaceWith(hello);
+console.log(hello);
+hello.innerHTML='chim tapak dam dam'
+    
+
+</script>
+</html>
