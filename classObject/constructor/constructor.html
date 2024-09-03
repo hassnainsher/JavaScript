@@ -18,6 +18,12 @@
     
     
     class Railwayform{
+        constructor(givenname){
+            this.name = givenname;
+            console.log('constructor called...' +this.name);
+            
+            // alert(this.name)
+        }
         submit(){
             alert(this.name + ' your form success fully submited')
             console.log(this.name);
@@ -29,14 +35,10 @@
                 h1.innerHTML = this.name;
                 document.body.appendChild(h1);
         }
-        fill(givenname){
-            this.name = givenname;
-            // alert(this.name)
-        }
     }
 
     const form = document.getElementById('nameForm');
-    let ali = new Railwayform();
+    let ali = new Railwayform('hello');
    
 
 
@@ -44,7 +46,7 @@
     form.addEventListener('submit', (event , )=>{
         event.preventDefault();
         let inputName = document.querySelector('input').value;
-        ali.fill(inputName)
+        // ali.constructor(inputName)
         ali.cancel()
         form.reset();
     })
