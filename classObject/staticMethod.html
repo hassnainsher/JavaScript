@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    class Hello {
+        constructor(name){
+            this.name = Hello.capitalize(name)
+        }
+        walk(){
+            alert('animal '+this.name + ' is walking')
+        }
+        static capitalize(name){
+            return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+        }
+    }
+    let j= new Hello('jack')
+    j.walk()
+    
+</script>
+</html>
