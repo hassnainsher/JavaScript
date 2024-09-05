@@ -4,13 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+      *{
+        /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 800 */
+
+
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+
+      }
+        #cursorimg {
+            position: absolute;
+            /* cursor: grab;  */
+            height: 50px;
+            width: 30px;
+            z-index: 999;
+            pointer-events: none;
+            rotate: 45deg;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .bgimg{
+            background-image: url(https://1602894.fs1.hubspotusercontent-na1.net/hub/1602894/hubfs/Cybersecurity%20Writing%20%281%29.webp?height=400&name=Cybersecurity%20Writing%20%281%29.webp);
+            height: 50vh;
+            background-repeat: no-repeat;
+            
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .logo{
+          height: 30px;
+        }
+        .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+    </style>
 </head>
 <body>
+    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+        <div class="container">
+          <a class="navbar-brand" href="#">
+             <img src="test.gif" class="logo" alt="">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,29 +69,60 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="Login.html">Link</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" onclick="search(event)" type="submit">Search</button>
+              <!-- Button trigger modal -->
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+  <img src="https://media.licdn.com/dms/image/v2/D4D03AQEOukdXprXDQw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695231068224?e=2147483647&v=beta&t=2Uyjx5PObDvPjJGPMaG_zlqskMlZdwngNbYgxT1isMI" alt="Avatar" class="avatar mx-3">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">My Profile</h5>
+        <!-- <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        <h1>Hassnain Sher</h1>
+        <hr>
+        <h1>03437554813</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+             
             </form>
           </div>
         </div>
       </nav>
       <!-- navbar -->
-    
+       
+  <div id="searchResults"></div>
+  <div class="content">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 bgimg rounded-4">
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <img src="cursor.png" alt="cursor" id="cursorimg">
+
+  <script src="javaScript.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
