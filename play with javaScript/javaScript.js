@@ -49,7 +49,11 @@
       if (input && resultFound) {
           searchResults.textContent = 'Results found!';
       } else if (input && !resultFound) {
-          searchResults.textContent = 'No results found.';
+          searchResults.innerHTML = `
+          <div class="alert alert-danger" role="alert">
+  No Reasult Found
+</div>
+          `;
       } else {
           searchResults.textContent = '';
       }

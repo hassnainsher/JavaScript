@@ -23,7 +23,8 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
 
         document.getElementById('myForm').reset();
         document.getElementById('updateBtn').style.display = 'none';
-    } else {
+    } 
+    else {
         const newRow = tableBody.insertRow();
         newRow.insertCell().textContent = name;
         newRow.insertCell().textContent = dob;
