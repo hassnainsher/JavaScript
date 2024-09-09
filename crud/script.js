@@ -22,7 +22,6 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         delete document.getElementById('myForm').dataset.rowId;
 
         document.getElementById('myForm').reset();
-        document.getElementById('updateBtn').style.display = 'none';
     } 
     else {
         const newRow = tableBody.insertRow();
