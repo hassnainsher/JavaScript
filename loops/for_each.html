@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    
+    <script>
+    const items = document.querySelectorAll('.item');
+    
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            console.log('Item clicked:', item.textContent);
+        });
+    });
+    </script>
+    
+    
+</body>
+<!-- <script>
+    let a = Array(1,4,5,7)
+    a.forEach((e)=>{
+        console.log(e);
+        
+    })
+</script> -->
+</html>
