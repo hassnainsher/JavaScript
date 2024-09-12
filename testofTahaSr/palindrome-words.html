@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+//     var word = 'hello'
+// for(i=0; i<word.length; i++){
+//         console.log(word[i]);
+        
+//     }
+//  for (j = word.length ; j >= 0; j--) {
+//     console.log(word[j]);
+// }
+//     if(word[i] !== word[j]){
+//         console.log('its equal');
+        
+//     }else{
+//         console.log('not equal');
+        
+//     }
+    
+var word = 'madam'; 
+var isPalindrome = true;
+
+for (var i = 0; i < word.length / 2; i++) {
+    var j = word.length - 1 - i;
+    if (word[i] !== word[j]) {
+        isPalindrome = false;
+        break;
+    }
+}
+
+if (isPalindrome) {
+    console.log('It\'s equal (Palindrome)');
+} else {
+    console.log('Not equal (Not a Palindrome)');
+}
+
+</script>
+</html>

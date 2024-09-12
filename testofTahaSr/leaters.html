@@ -90,6 +90,9 @@
 // }
 
 
+
+// correct answer 
+/*
 function capitalizeLastLetters() {
     const text = document.getElementById('textArea').value;
     
@@ -101,6 +104,49 @@ function capitalizeLastLetters() {
     });
     textArea.value = capital.join(' '); 
 }
+ */   
+
+
+    function capitalizeLastLetters() {
+    var text = document.getElementById('textArea').value;
+
+    var words = text.split(" "); 
+    // var capital = [];
+    // console.log(words.length);
+    for(i=0; i<words.length; i++){
+        // console.log(i);
+        
+        var word = words[i]
+        // console.log(word);
+        var lastLetter = word.charAt(word.length - 1).toUpperCase();
+        // console.log(lastLetter);
+        var restOfWord = word.substring(0 , word.length - 1);
+        console.log(restOfWord+lastLetter);
+        
+        
+        
+    }}
+
+    // let a = 'helo'
+    // let b = a.substring( a.length - 1)
+    // console.log(b);
+    
+    
+
+
+
+
+
+
+    // for (var i = 0; i < words.length; i++) {
+    //     var word = words[i];
+    //     var lastLetter = word.charAt(word.length - 1).toUpperCase();
+    //     var restOfWord = word.substring(0, word.length - 1);
+    //     capital.push(restOfWord + lastLetter);
+    // }
+
+    // document.getElementById('textArea').value = capital.join(' ');
+
 
 
 
