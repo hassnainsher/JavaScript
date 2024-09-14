@@ -16,4 +16,11 @@ using namespace std;
 //	cout << a1;
 //}
 
+int main() {
+	int a;
+	cin >> a;
+	if (a % 2 == 0) {
+		cout << "ok";
+	};
+}
 
