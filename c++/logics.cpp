@@ -319,3 +319,94 @@ int main() {
 		cout << endl;
 	}
 }
+
+
+//9/18/2024
+
+
+//int main() {
+//	for (int i = 1; i <= 5; i++){
+//		for (int j = 1;j <= 6-i; j++) {
+//			cout <<j;
+//
+//		cout << endl;
+//	}	}
+//}
+
+//find a prime number 
+
+//int main() {
+//	int n;
+//	bool flag = 0;
+//	cin >> n;
+//	for (int i = 1; i <=n;i++) {
+//		if(n%i==0){
+//			cout << "Non-prime" << endl;
+//			flag = 1;
+//			break;
+//		}
+//	}
+//	if (flag == 0) {
+//		cout << "prime" << endl;
+//	}
+//}
+
+
+//enter your number and print in reverse
+
+//int main() {
+//	int n;
+//	cin >> n;
+//	int reverse = 0;
+//	while (n > 0) {
+//		int lastdigit = n % 10;
+//		reverse = reverse * 10 + lastdigit;
+//		n = n / 10;
+//	}
+//	cout << reverse << endl;
+//}
+
+//find a armstrong number
+
+//#include <math.h>
+//
+//int main() {
+//	int n;
+//	cin >> n;
+//	int sum = 0;
+//	int original = n;
+//	while (n > 0) {
+//		int lastdigit = n % 10;
+//		sum += pow(lastdigit, 3);
+//		n = n / 10; 
+//	}
+//	if (sum == original) {
+//		cout << "armstrong number"<< endl; 
+//	}
+//	else { cout << "not armstrong"; }
+//}
+
+
+//fibonacci sequence
+
+//void fib(int n) {
+//	int t1 = 0;
+//	int t2 = 1;
+//	int nextTerm;
+//	for (int i = 1;i <= n;i++) {
+//		cout << t1 << endl;
+//		nextTerm = t1 + t2;
+//		t1 = t2;
+//		t2 = nextTerm;
+//	}
+//	return;
+//}
+//
+//int main() {
+//	int n; 
+//	cin >> n;
+//	fib(n);
+//	return 0;
+//}
+
+
