@@ -410,3 +410,203 @@ int main() {
 //}
 
 
+
+
+//9/19/2024
+
+//rhombus shape
+ 
+//int main() {
+//	int n;
+//	cin >> n;
+//	for (int i = 1;i <= n;i++) {
+//		for (int j = 1;j <= n - i;j++) {
+//			cout << " ";
+//		}
+//		for (int j = 1; j <= n; j++) {
+//			cout << "#";
+//		}
+//		cout << endl;
+//	}
+//}
+
+//number pattren
+
+//int main() {
+//	int n;
+//	cin >>n;
+//	for (int i = 1;i <= n;i++) {
+//		for (int j = 1;j <= n - i;j++) {
+//			cout << " ";
+//		}
+//		for (int j = 1;j <= i;j++) {
+//			cout << j << " ";
+//		}
+//		cout << endl;
+//	}
+//	
+//
+//}
+
+//palindromic pattren
+
+//int main() {
+//	int n;
+//	cin >> n;
+//	for (int i = 1;i <= n;i++) {
+//		int j;
+//		for (j = 1;j <= n - i;j++) {
+//			cout << "  ";
+//		}
+//		int k = i;
+//		for (;j <= n;j++) {
+//			cout << k-- << " ";
+//		}
+//		k = 2;
+//		for (;j <= n + i - 1;j++) {
+//			cout << k++ << " ";
+//		}
+//		cout << endl;
+//	}
+//}
+
+
+//stars pattren
+
+/*
+int main() {
+	int n=5;
+	//cin >> n;
+	for (int i = 1;i <= n;i++) {
+		for (int j = 1; j <= n-i; j++) {
+			cout << " ";
+
+		}
+
+		//cout<<"g";
+		//cout << i << endl;
+		for (int j = 1; j <= 2 * i - 1;j++) {
+			cout << "%";
+		}
+		cout << endl;
+	}
+
+	// i'm not nested
+
+	for (int i = n;i >=1;i--) {
+		for (int j = 1; j <= n - i; j++) {
+			cout << " ";
+
+		}
+
+		//cout<<"g";
+		//cout << i << endl;
+		for (int j = 1; j <= 2 * i - 1;j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+*/
+
+
+//zigzag pattren
+
+//int main() {
+//int n; 
+//cin >> n;
+//for (int c = 1;c <= 3;c++) {
+//	for (int r = 1;r <= n;r++) {
+//		if (((c + r) % 4 == 0) || (c == 2 && r % 4 == 0)) {
+//			cout << "*";
+//		}
+//		else {
+//			cout << " ";
+//		}
+//	}
+//	cout << endl;
+//}
+//}
+
+
+//functions methods 
+//chack the factorial of a number
+
+//int fact(int n) {
+//	int factorial = 1;
+//	for (int i = 2;i <= n;i++) {
+//		factorial *= i;
+//	}
+//	return factorial;
+//}
+//
+//int main() {
+//	int n;
+//	cin >> n;
+//
+//	int ans = fact(n);
+//	cout << ans << endl;
+//	return 0;
+//}
+
+//arry
+//#include<vector>
+//int main() {
+//	int n;
+//	cin >> n;
+//	vector<int> array(n)
+//	int array[n];
+//	for (int i = 0; i < n;i++) {
+//		cin >> array[i];
+//	}
+//	for (int i = 0;i < n;i++) {
+//		cout << array[i] << " ";
+//	}
+//}
+
+
+//array and leangth featch from user
+
+//#include <vector>
+//
+//int main() {
+//	int n;
+//	cin >> n;
+//	vector<int> array(n);  
+//	for (int i = 0; i < n; i++) {
+//		cin >> array[i];
+//	}
+//	for (int i = 0; i < n; i++) {
+//		cout << array[i] << " ";
+//	}
+//	cout << endl;
+//}
+
+
+
+
+
+// #include <vector>
+// #include<climits>
+// int main() {
+// 	int n;
+// 	cin >> n;
+// 	vector<int> arr(n);
+// 	//int arr[n];
+// 	for (int i = 0;i < n;i++) {
+// 		cin >> arr[i];
+// 	}
+// 	int maxNo = INT_MIN;
+// 	int minNo = INT_MAX;
+
+// 	for (int i = 0;i < n;i++) {
+// 		if (arr[i] > maxNo) {
+// 			maxNo = arr[i];
+// 		}
+// 		if (arr[i] < minNo) {
+// 			minNo = arr[i];
+// 		}
+// 	}
+// }
+
+
