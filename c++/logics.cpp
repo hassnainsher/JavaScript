@@ -610,3 +610,108 @@ int main() {
 // }
 
 
+
+
+
+//9/23/2024
+
+//int main() {
+//	int n;
+//	cin >> n;
+//	for (int i = 0;i< n;i++) {
+//		char word+1;
+//		for (int j = 0;j < i+1;j++) { 
+//			cout << word;
+//		}
+//
+//		
+//		cout << endl;
+//	}
+//}
+
+
+//int main() {
+//	int n;
+//	cin >> n;
+//	for (int i = 0;i < n;i++) {
+//		for (int j = n;j > 0;j--) {
+//			cout << j;
+//		}
+//		cout<<endl;
+//	}
+//}
+
+//int main() {
+//	int n = 4;
+//	for (int i = 0;i < n; i++) {
+//		for (int j = i + 1;j > 0;j--) {
+//			cout << j;
+//		}
+//		cout << endl;
+//	}
+//}
+
+//int main() {
+//	int n;
+//	cin >> n;
+//	char num = 'A';
+//	for (int i = 0;i < n;i++) {
+//		for (int j = i + 1; j > 0;j--) {
+//			cout << num << " ";
+//			num++;
+//		}
+//		cout << endl;
+//	}
+//}
+
+//int main() {
+//	int n = 6;
+//	
+//	for (int i = 0;i < n;i++){ 
+//		for (int j = 0;j < i;j++) {
+//			cout << " ";
+//		}
+//		for (int a = 0; a < n - i;a++) {
+//			cout << (i + 1);
+//		}
+//		cout << endl;
+//	}
+//	
+//}
+
+//pick up a smaller number from array
+
+//int main() {
+//	int nums[] = { 4,6,5,7,9,1 };
+//	int size = 6;
+//	int smallest = INT_MAX;
+//	for (int i = 0;i < size;i++) {
+//		if (nums[i] < smallest) {
+//			smallest = nums[i];
+//		}
+//	}
+//	cout << "smallest = " << smallest << endl;
+//	return 0;
+//}
+
+
+
+//void changArr(int arr[], int size) {
+//	cout << "in function\n";
+//	for (int i = 0; i < size;i++) {
+//		arr[i] = 2 + arr[i];
+//	}
+//}
+//int main() {
+//	int arr[] = { 1,2,3 };
+//	changArr(arr, 3);
+//	cout << "in main \n";
+//	for (int i = 0; i < 3; i++) {
+//		cout << arr[i] << "";
+//	}
+//	cout << endl;
+//	return 0;
+//}
+
+
+
